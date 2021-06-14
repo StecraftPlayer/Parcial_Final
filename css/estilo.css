@@ -1,0 +1,162 @@
+/* PATRONES GLOBALES DE CSS */
+
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif; }
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'Poppins', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen por defecto varias etiquetas de HTML5 */
+body, h1, h2, h3, h4, h5, h6, p, figure, img { margin: 0; }
+
+
+
+/* CSS Propio */
+
+/* Componente Botón WhatsApp flotante */
+aside#boton-wp { width: 45px; height: 45px; margin: 0; float: none; position: fixed; right: 15px; bottom: 15px; z-index: 99998; }
+aside#boton-wp a { width: 100%; height: auto; margin: 0; float: none; position: relative; display: block; background: red; border-radius: 50%; text-align: center; padding: 10px 0; transition: all 0.3s ease-in; }
+aside#boton-wp a i { font-size: 1.5em; line-height: 1em; color: #fff; transition: all 0.3s ease-in; }
+aside#boton-wp a:hover { background: white; transition: all 0.3s ease-in; }
+aside#boton-wp a:hover i { color: red; transition: all 0.3s ease-in; }
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: #D68225; }
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-moviles nav a:hover { color: #f8b465; transition: all 0.3s ease-in; }
+
+/* Componente Header logo */
+
+header { width: 100%;height: 35%; margin: 0; float: none; position: absolute; left: 0; top: 0; z-index: 99990; overflow: hidden; background: url('../img/Head.jpg') }
+header div#capa-superior { width: 100%; height: 500px; display: block; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 2; }
+header div#capa-superior article { width: 1100px; height: 80px; margin: 0 auto; float: none; position: relative; }
+header div#capa-superior article figure { width: 70%; height: 160px; margin: 0; float: left; position: relative; top: 10px; }
+header div#capa-superior article figure a { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+header div#capa-superior article figure a img { padding-left: 33%; padding-top: 45px; width: auto; height: 150px; margin: 0 auto; float: none; position: relative; display: block; }
+
+
+/* Caja Main */
+main { position: relative; width: 100%; height: 1000px; float: none; padding-top: 100px; }
+main.margin-600 { margin: 220px auto 0; }
+
+/*info*/
+main section#info h1{ padding-top: 40px; padding-bottom: 20px; font-size: 50px; text-align: center; text-decoration: none; color: black;}
+main section#info h2{ padding-bottom: 50px; padding-right: 20px; padding-left: 20px; font-size: 20px; text-align: center; text-decoration: none; color: black;}
+main section#Barra { width: auto; height: 10px; background-color: red;}
+main section#info img {margin: 0 480px 0; width: 750px; height: auto; float: none;}
+
+/* Bloque Categorías */
+main section#bloque-categorias { width: 100%; height: auto; margin: 100px auto 75px; float: none; position: relative; }
+main section#bloque-categorias nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#bloque-categorias nav a { width: 31%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a#img-pociones { background: url('../img/Consola.png') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-armas  { background: url('../img/Juegos.jpg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-armaduras { background: url('../img/Empresa.jpg') no-repeat top center; background-size: cover; }
+
+main section#bloque-categorias nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: #fff; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: #999; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+/* Bloque Filtro */
+
+main section#Filtro {margin: 0 auto; position: relative;  height: auto; float: none;padding-top: 100px; padding-left: 150px; }
+
+main section#Filtro nav#F {background: #770000; margin: 0 60px 0; position: relative; width: 200px; height: 500px; float: left;  display: inline-block;} 
+main section#Filtro nav#F  a { width: 70%; margin: 0 auto; height: auto; display: block; float: none; position: relative; padding: 50px 0; background: #770000; text-align: center; font-size: 1em; font-weight: 500; line-height: 1em; text-decoration: none; transition: all 0.3s ease-in;}
+main section#Filtro nav#F a:hover {color: red;transition: all 0.3s ease-in; ;}
+main section#Filtro nav#F a.Activo { color: white; border-bottom: solid 5px white;}
+main section#Filtro nav#F a.Inactivo { color: white;}
+
+
+main section#Filtro article { background: #fff3f3; position: relative; width: 790px; height: auto; float: none; display: inline-block;}
+main section#Filtro article img {width: 250px; height: auto; margin: 0.65%; display: inline-block; float: none; border-radius: 10px;}
+
+
+
+/* Bloque Productos */
+main section.bloque-productos { width: 100%; height: auto; margin: 0 auto 75px; float: none; position: relative; }
+main section.bloque-productos article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; }
+main section.bloque-productos article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section.bloque-productos article nav a span.nombre-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 0%; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.precio-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 0%; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+
+main section.bloque-productos article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-productos article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.nombre-producto { font-size: 3.125em; ; color: #000; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.precio-producto { font-size: 2em; color: #333; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+
+/* Bloque Producto (Unidad) */
+
+main section.Producto { width: 100%; height: auto; margin: 0 auto ; float: none; position: relative;}
+main section.Producto article { width: 100%; height: 1100px; margin: 0 auto ; float: none; position: relative;}
+main section.Producto article h1{ width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400}
+main section.Producto article h2{ width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 2.5em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400}
+main section.Producto article h3{ width: 100%; height: auto; margin: 3% auto; float: none; position: relative; font-size: 1.5em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400}
+main section.Producto article h5{ color: rgb(49, 0, 141); width: 100%; height: auto; margin: 50px ; float: none; position: relative; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; display: block}
+main section.Producto article img { width: 40%; height: auto; margin: 20% 30% 30% 30%  ; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Footer con 2 columnas */
+
+footer { width: 100%; height: 500px; margin: 0 auto; float: none; position: relative; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3019+0,cf0404+100;Red+3D */background: rgb(255,48,25); /* Old browsers */background: -moz-linear-gradient(top,  rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6-15 */background: -webkit-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(to bottom,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */}
+footer div#ancla-footer {width: 100%; height: 1px; margin: 0; float: none; position: absolute; top: -120px; left: 0;}
+
+footer div#C4-footer {width: 100%; padding-left: 15%;text-align: left;}
+footer div#C4-footer div.cajas-footer{ width: 10%; height: 200px; margin-top: 100px; margin-left: 300px; float: left; position: relative;}
+
+footer div#C4-footer div.cajas-footer img {padding-left: 15px; width: 70%;}
+footer div#C4-footer div.cajas-footer h3 {text-align: center; width: 150px; font-weight: 100; height: 100px; float: none; position: relative; display: inline-block; font-size: 25px; text-align: left; color: white; font-family: Calibri;}
+footer div#C4-footer div.cajas-footer h2 { padding-top: 100px; text-align: center; width: 150px; float: none; position: relative; display: inline-block; text-align: left; font-size: 40px; color: white; font-family: arial;}
+
+footer div#C4-footer div.cajas-footer nav#links-Social a i {    font-size: 1.5em; Width: 12%; height: auto;display: block; margin: 0 30px 0 0;float: left;position: relative;padding: 5px 0 0 0;color: white;}
+
+footer .inferior-Footer p {font-size: 30px; padding-top: 100px; margin-left: 600px; display: block; text-align: center; color: white; font-family: Corbel Light;display: inline-block;}
+
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 90%; }
+    header article figure { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+main section#Filtro {width: 90%; }
+
+main section#Filtro nav#F {background: #770000; margin: 0 60px 0; position: relative; width: 100%; height:auto ;  display: inline-block;} 
+main section#Filtro nav#F  a {color: white; width: 70%; margin: 0 auto; height: auto; display: block; float: none; position: relative; padding: 50px 0; background: #770000; text-align: center; font-size: 1em; font-weight: 500; line-height: 1em; text-decoration: none; transition: all 0.3s ease-in;}
+
+
+main section#Filtro article { background: #fff3f3; position: relative; width: 790px; height: auto; float: none; display: inline-block;}
+main section#Filtro article img {width: 250px; height: auto; margin: 0.65%; display: inline-block; float: none; border-radius: 10px;}
+
+    aside#menu-moviles { display: block; }
+}
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
